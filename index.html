@@ -1,56 +1,84 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/674d94d429.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
-    <title>포트폴리오1</title>
+    <title>이단비 portfolio Corporate01</title>
 </head>
 <body>
     <header id="headBox">
-        <div class="user_menu">
-            <div class="inner wrap">
-                <h1 id="logo"><a href="./">AA천문대</a></h1>
-                <ul class="unb wrap">
-                    <li><a href="#"><i class="fas fa-power-off"></i> 로그인</a></li>
-                    <li><a href="/join.html"><i class="fas fa-user"></i> 회원가입</a></li>
-                </ul>
-                <form action="#" class="search_box">
-                    <fieldset>
-                        <legend>검색</legend>
-                        <input type="text" placeholder="검색어를 입력해주세요.">
-                        <button type="submit"><i class="fas fa-search"></i> <span class="hidden">검색</span></button>
-                    </fieldset>
-                </form>
-            </div>
-        </div>
-        <div class="gnb_box">
-            <div class="inner wrap">
-                <ul class="gnb wrap">
-                    <li><a href="/contact.html">예약하기</a></li>
-                    <li><a href="/intro.html">회사 소개</a></li>
-                    <li><a href="/department.html">조직 구성</a></li>
-                    <li><a href="/gallery.html">갤러리 게시판</a></li>
-                    <li><a href="/community.html">자유 게시판</a></li>
-                    
-                    <li><a href="/location.html">찾아오시는 길</a></li>
-                </ul>
-                <button class="btn_menu"><i class="fas fa-align-justify"></i> <span class="hidden">전체메뉴</span></button>
-            </div>
+        <div class="inner wrap">
+            <h1><a href="#">Observatory</a></h1>
+            <ul class="gnb wrap">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Organization</a></li>
+                <li><a href="#">gallery</a></li>
+                <li><a href="#">community</a></li>
+                <li><a href="#">contact us</a></li>
+            </ul>
+            <ul class="unb wrap">
+                <li><a href="#"><span>log</span><span>in</span></a></li>
+                <li><a href="#">join</a></li>
+            </ul>
+            <button class="btn_gnb" type="button"><i class="fas fa-bars"></i><span class="hidden">더보기</span></button>
         </div>
     </header>
     <section id="mainBanner">
+        <h1 class="hidden">Main visual</h1>
         <div class="inner">
-            <h1>도심 속 별빛산책</h1>
-            <p>도심 속 별난 세상</p>
+            <form action="#" method="post" id="searchForm">
+                <fieldset>
+                    <legend class="hidden">search</legend>
+                    <label for="imgaeSearchBox">Search image!</label>
+                    <div class="search_box">
+                        <input type="text" id="imgaeSearchBox" name="imgaeSearchBox" value="" placeholder="Search all resources">
+                        <button type="submit"><i class="fas fa-search"></i><span class="hidden"></span></button>
+                    </div>
+                </fieldset>
+            </form>
         </div>
-        <video src="./img/space.mp4" autoplay loop muted></video>
+    </section>
+    <section id="introduceBox">
+        <h1 class="hidden">Introduce our work</h1>
+        <div class="inner">
+            <div class="join_box wrap">
+                <article>
+                    <h2>Lorem ipsum dolor</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </article>
+                <article>
+                    <h2>Lorem ipsum dolor sit</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                </article>
+            </div>
+            <div class="reason_box wrap">
+                <article>
+                    <h2>Lorem ipsum dolor sit</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    <a href="#">view more</a>
+                    <i class="icon fas fa-cloud-sun"></i>
+                </article>
+                <article>
+                    <h2>Lorem ipsum dolor sit</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    <a href="#">view more</a>
+                    <i class="icon fas fa-rainbow"></i>
+                </article>
+                <article>
+                    <h2>Lorem ipsum dolor sit</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    <a href="#">view more</a>
+                    <i class="icon fas fa-umbrella"></i>
+                </article>
+            </div>
+        </div>
     </section>
     <section id="howtoBuy">
         <div class="inner">
-            <h1>AA천문대의 <span class="point_text">핵심 가치!</span></h1>
-            <p>믿을 수 있는 장착점 스피드메이트와 함께</p>
+            <h1>Lorem, <span class="point_text"> ipsum.</span></h1>
+            <p>Lorem ipsum dolor sit. Lorem, ipsum dolor.</p>
             <ul class="step_box wrap">
                 <li>
                     <div class="pic wrap">
@@ -59,8 +87,8 @@
                     <dl>
                         <dt>STEP 1</dt>
                         <dd>
-                            시를 대표하는<br />
-                            <strong>천문대 브랜드</strong>
+                            Lorem ipsum<br />
+                            <strong>dolor sit.</strong>
                         </dd>
                     </dl>
                 </li>
@@ -71,8 +99,8 @@
                     <dl>
                         <dt>STEP 2</dt>
                         <dd>
-                            쉽게 접근 가능<br />
-                            <strong>프로그램 운영</strong>
+                            Lorem ipsum<br />
+                            <strong>dolor sit amet.</strong>
                         </dd>
                     </dl>
                 </li>
@@ -83,8 +111,8 @@
                     <dl>
                         <dt>STEP 3</dt>
                         <dd>
-                            <strong>차별화</strong>를 통한<br />
-                            매력 확보
+                            <strong>Lorem</strong> ipsum<br />
+                            dolor sit.
                         </dd>
                     </dl>
                 </li>
@@ -95,8 +123,8 @@
                     <dl>
                         <dt>STEP 4</dt>
                         <dd>
-                            미래과한산업<br />
-                            <strong>인재 양성</strong>
+                            Lorem,<br />
+                            <strong> ipsum dolor.</strong>
                         </dd>
                     </dl>
                 </li>
@@ -107,119 +135,137 @@
                     <dl>
                         <dt>STEP 5</dt>
                         <dd>
-                            <strong>지역사회에 기여</strong><br />
-                            기회 마련
+                            <strong>Lorem ipsum</strong><br />
+                            dolor sit.
                         </dd>
                     </dl>
                 </li>
             </ul>
         </div>
     </section>
-    <section id="eventBanner">
-        <div class="inner wrap">
-            <article></article>
-            <article></article>
-            <article></article>
-        </div>
-    </section>
     <section id="consumerMenu">
         <div class="inner wrap">
             <div>
-                <h1>행사사진</h1>
+                <h1>Lorem, ipsum.</h1>
                 <ul class="consumer_menu wrap">
-                    <li><a href="#"><i class="fas fa-arrow-alt-circle-right"></i> 2019 꿈.담.아(하늘에 꿈을 담는 아이들) 6월 활동</a></li>
-                    <li><a href="#"><i class="fas fa-arrow-alt-circle-right"></i> 2019 천문체험의 날(세종대왕과 해시계)</a></li>
-                    <li><a href="#"><i class="fas fa-arrow-alt-circle-right"></i> 2019 놀토버스'과학탐사대' 6월 활동</a></li>
-                    <li><a href="#"><i class="fas fa-arrow-alt-circle-right"></i> 2019 천문과학지식봉사동아리 6월 활동</a></li>
-                    <li><a href="#"><i class="fas fa-arrow-alt-circle-right"></i> 2019 놀토버스 '과학탐사대' 5월 활동</a></li>
-                    <li><a href="#"><i class="fas fa-arrow-alt-circle-right"></i> 2019 꿈.담.아(하늘에 꿈을 담는 아이들) 5월 활동</a></li>
-                    <li><a href="#"><i class="fas fa-arrow-alt-circle-right"></i> 2019 기관연계사업(한강사업본부) 5월 활동</a></li>
-                    <li><a href="#"><i class="fas fa-arrow-alt-circle-right"></i> 2019 Star Family</a></li>
+                    <li><a href="#"><i class="fas fa-arrow-alt-circle-right"></i> Lorem ipsum dolor sit amet consectetur.</a></li>
+                    <li><a href="#"><i class="fas fa-arrow-alt-circle-right"></i> Lorem ipsum dolor sit amet consectetur.</a></li>
+                    <li><a href="#"><i class="fas fa-arrow-alt-circle-right"></i> Lorem ipsum dolor sit amet consectetur.</a></li>
+                    <li><a href="#"><i class="fas fa-arrow-alt-circle-right"></i> Lorem ipsum dolor sit amet consectetur.</a></li>
+                    <li><a href="#"><i class="fas fa-arrow-alt-circle-right"></i> Lorem ipsum dolor sit amet consectetur.</a></li>
+                    <li><a href="#"><i class="fas fa-arrow-alt-circle-right"></i> Lorem ipsum dolor sit amet consectetur.</a></li>
+                    <li><a href="#"><i class="fas fa-arrow-alt-circle-right"></i> Lorem ipsum dolor sit amet consectetur.</a></li>
+                    <li><a href="#"><i class="fas fa-arrow-alt-circle-right"></i> Lorem ipsum dolor sit amet consectetur.</a></li>
                 </ul>
             </div>
             <div class="pic"></div>
         </div>
     </section>
-    <section id="insuranceMenu">
-        <h1 class="hidden">보험 메뉴</h1>
+    <section id="newsBox">
+        <h1 class="hidden">News</h1>
         <div class="inner wrap">
-            <article>
-                <h2>소비자포털</h2>
-                <p>생명보험이 어려운 보험소비자를 위한 종합 정보 포털</p>
-                <a href="#">바로보기 <i class="fas fa-arrow-right"></i></a>
+            <article class="news_info">
+                <p>Lorem ipsum dolor sit amet consectetur, dolore?</p>
+                <h2>latest<br><strong>news</strong></h2>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <a href="#"><i class="fas fa-plus"></i> 더보기</a>
+                <div class="btn_box">
+                    <button type="button"><i class="fas fa-chevron-left"></i><span class="hidden">이전 기사</span></button>
+                    <button type="button"><i class="fas fa-chevron-right"></i><span class="hidden">다음 기사</span></button>
+                </div>
             </article>
-            <article>
-                <h2>내보험 찾아줌</h2>
-                <p>나의 숨은보험금 한번에 확인할 수 없을까?</p>
-                <a href="#">바로보기 <i class="fas fa-arrow-right"></i></a>
-            </article>
-            <article>
-                <h2>공시실</h2>
-                <p>합리적 보험상품선택을 위한 필수 코스</p>
-                <a href="#">바로보기 <i class="fas fa-arrow-right"></i></a>
-            </article>
-            <article>
-                <h2>보험 다모아</h2>
-                <p>보험상품, 보험료 한눈에 비교하세요. 온라인 보험슈퍼마켓</p>
-                <a href="#">바로보기 <i class="fas fa-arrow-right"></i></a>
-            </article>
+            <ul class="news wrap">
+                <li>
+                    <a href="#">
+                        <div class="pic"></div>
+                        <h2>Lorem ipsum dolor sit amet, consectetu.</h2>
+                        <p class="contents">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima repellendus vitae quae nihil, asperiores
+                        </p>
+                        <time datetime="2020-01-01">2020.01.01</time>
+                        <i class="icon fas fa-plus"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="pic"></div>
+                        <h2>Lorem ipsum dolor sit amet, consectetur.</h2>
+                        <p class="contents">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima repellendus vitae quae nihil
+                        </p>
+                        <time datetime="2020-01-01">2020.01.01</time>
+                        <i class="icon fas fa-plus"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="pic"></div>
+                        <h2>Lorem ipsum dolor sit amet, consectetur.</h2>
+                        <p class="contents">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima repellendus vitae quae nihil
+                        </p>
+                        <time datetime="2020-01-01">2020.01.01</time>
+                        <i class="icon fas fa-plus"></i>
+                    </a>
+                </li>
+            </ul>
         </div>
     </section>
     <footer id="footBox">
-        <h1 class="hidden">하단</h1>
+        <h1 class="hidden">footer</h1>
         <div class="inner">
             <div class="inb_box wrap">
                 <ul class="inb wrap">
-                    <li><a href="#">개인정보처리방침</a></li>
-                    <li><a href="#">이메일무단수집거부</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">email collection</a></li>
                 </ul>
-                <address>세종특별자치시 한누리대로 2130 (보람동 626-5) (우) 30151</address>
+                <address>52 Ilsandong-gu, Goyang-si, Gyeonggi-do, Republic of Korea</address>
             </div>
             <div class="logo_box wrap">
-                <h2>로고</h2>
+                <h2>Observatory</h2>
                 <ul class="call_box">
                     <li>
-                        <strong>도담</strong>
-                        <span><a href="tel:0443016263">044-301-6263</a></span>
+                        <strong>Dodam</strong>
+                        <span><a href="tel:1231231234">123-123-1234</a></span>
                     </li>
                     <li>
-                        <strong>아름</strong>
-                        <span><a href="tel:0443016361">044-301-6361</a></span>
+                        <strong>Arum</strong>
+                        <span><a href="tel:1231231234">123-123-1234</a></span>
                     </li>
                     <li>
-                        <strong>종촌</strong>
-                        <span><a href="tel:044301461">044-301-461</a></span>
+                        <strong>Jong</strong>
+                        <span><a href="tel:1231231234">123-123-1234</a></span>
                     </li>
                     <li>
-                        <strong>한솔</strong>
-                        <span><a href="tel:0443016125">044-301-6125</a></span>
+                        <strong>Hansol</strong>
+                        <span><a href="tel:1231231234">123-123-1234</a></span>
                     </li>
                     <li>
-                        <strong>고운남측</strong>
-                        <span><a href="tel:0443017262">044-301-7262</a></span>
+                        <strong>Gounnam</strong>
+                        <span><a href="tel:1231231234">123-123-1234</a></span>
                     </li>
                     <li>
-                        <strong>고운</strong>
-                        <span><a href="tel:0443016661">044-301-6661</a></span>
+                        <strong>Goun</strong>
+                        <span><a href="tel:1231231234">123-123-1234</a></span>
                     </li>
                     <li>
-                        <strong>보람</strong>
-                        <span><a href="tel:0443016761">044-301-6761</a></span>
+                        <strong>Boram</strong>
+                        <span><a href="tel:1231231234">123-123-1234</a></span>
                     </li>
                     <li>
-                        <strong>대평</strong>
-                        <span><a href="tel:0443016961">044-301-6961</a></span>
+                        <strong>Deap</strong>
+                        <span><a href="tel:1231231234">123-123-1234</a></span>
                     </li>
                     <li>
-                        <strong>새롬</strong>
-                        <span><a href="tel:0443016861">044-301-6861</a></span>
+                        <strong>Searom</strong>
+                        <span><a href="tel:1231231234">123-123-1234</a></span>
                     </li>
                     <li>
-                        <strong>소담</strong>
-                        <span><a href="tel:0443017061">044-301-7061</a></span>
+                        <strong>Sodam</strong>
+                        <span><a href="tel:1231231234">123-123-1234</a></span>
                     </li>
                 </ul>
-                <small>Copyright &copy; 세종특별자치시. All Rights Reserved.</small>
+                <small>Copyright &copy; DanBi-Lee. All Rights Reserved.</small>
             </div>
         </div>
     </footer>

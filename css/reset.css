@@ -13,9 +13,9 @@ main { display: block; width: 100%; }
 
 html, body{height: 100%;}
 
-@font-face { font-family: 'MapoGoldenPier'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoGoldenPierA.woff') format('woff'); font-weight: normal; font-style: normal; }
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap');
 
 .wrap::after{ content:' '; display:block; clear:both;}
 .hidden, legend {display: block; width: 0px; height:0px; overflow: hidden; position: fixed; z-index: -999; top: -999px; left: -999px;}
-body{font-family: 'MapoGoldenPier';}
+body{font-family: 'Raleway', sans-serif; color: #333;}
 ::selection{background-color: #e0e0e0; color: #909090;}
