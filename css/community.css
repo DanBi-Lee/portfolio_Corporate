@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+
+/* .search_box */
+.community > .inner > .search_box { height: 80px; background-color: #eee; margin-bottom: 40px; border-radius: 8px; padding-top: 20px; box-sizing: border-box; }
+.community > .inner > .search_box p {float: left; margin-left: 40px; line-height: 40px; font-size: 14px;}
+.community > .inner > .search_box p > i { font-size: 18px; }
+.community > .inner > .search_box p > .count_all {font-weight: 600;}
+.community > .inner > .search_box > form{ width: 300px; height: 40px; position: relative; float: right; margin-right: 20px;}
+.community > .inner > .search_box > form > fieldset {width: 100%; height: 100%;}
+.community > .inner > .search_box > form > fieldset > input{ width: 100%; height: inherit; box-sizing: border-box; border: none; border-radius: 4px; text-indent: 20px; padding-right: 40px; }
+.community > .inner > .search_box > form > fieldset > button { width: 40px; height: inherit; position: absolute; top: 0; right: 0; background-color: transparent; font-size: 18px;}
+
+/* 게시판 table */
+.community > .inner table { width: 100%; border: 2px solid #555; border-right: 0; border-left: 0; }
+.community > .inner table th { padding: 20px; border-bottom: 1px solid #555;}
+.community > .inner table th:first-of-type { width: 15%; }
+.community > .inner table th:nth-of-type(2) { width: 40%; }
+.community > .inner table th:nth-of-type(3) { width: 25%; }
+.community > .inner table th:nth-of-type(4) { width: 30%; }
+.community > .inner table td{ height: 60px; font-size: 14px; }
+.community > .inner table td:nth-of-type(2){text-align-last: left;}
+.community > .inner table tr:hover td{ background: #eee;}
+.community > .inner .btn_page { display: inline-block; margin-top: 40px; line-height: 30px; }
+.community > .inner .btn_page > p {float: left; margin-right: 20px;}
+.community > .inner .btn_page > p:last-of-type{margin-right: 0px;}
+.community > .inner .btn_page > ol {float: left; margin-right: 5px;}
+.community > .inner .btn_page > ol > li {float: left; margin-right: 10px; width: 30px; height: 30px; text-align: center;}
+.community > .inner .btn_page > ol > li.on {font-weight: 600; color: #fff; background: #555; border-radius: 50%;}
