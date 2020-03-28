@@ -8,16 +8,16 @@
 #headBox > .inner > .gnb { float: left; font-size: 16px;}
 #headBox > .inner > .unb { float: right; font-size: 14px; }
 #headBox > .inner > .gnb > li { float: left; margin-right: 20px; }
-#headBox > .inner > .unb > li { float: left; margin-left: 10px; }
+#headBox > .inner > .unb > li { float: left; margin-left: 10px; /*overflow: hidden;*/}
 #headBox > .inner > .unb > li > a { padding: 2px 16px 6px; border: 1px solid #fff; border-radius: 40px;}
 #headBox > .inner > .unb > li:last-child > a{ background: #fff; color: #333; font-weight: 600; }
 #headBox > .inner > .btn_gnb { display: none; }
 
 /* #mainBanner */
-#mainBanner { width: 100%; height: 800px; padding-top: 80px; box-sizing: border-box; background: linear-gradient(45deg, #bbb, #eee); background-image: url('../img/galaxy.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;}
-#mainBanner > .inner { width: 1180px; margin: 0 auto; text-align: center; }
-#mainBanner > .inner > #searchForm { margin-top: 200px; }
-#mainBanner > .inner > #searchForm label[for="imgaeSearchBox"] { display: block; margin-bottom: 20px; font-size: 20px; text-transform: uppercase; color: #fff; }
+#mainBanner { width: 100%; height: 100vh; min-height: 500px; padding-top: 80px; box-sizing: border-box; background: linear-gradient(45deg, #bbb, #eee); background-image: url('../img/galaxy.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;}
+#mainBanner > .inner { display: table; width: 1180px; height: 100%; margin: 0 auto; text-align: center; }
+#mainBanner > .inner > #searchForm { display: table-cell; vertical-align: middle; transform: translateY(-100px); }
+#mainBanner > .inner > #searchForm label[for="imgaeSearchBox"] { display: block; margin-bottom: 40px; font-size: 40px; text-transform: uppercase; color: #fff; font-weight: 600; }
 #mainBanner > .inner > #searchForm .search_box { position: relative; width: 600px; height: 60px; margin: 0 auto; }
 #mainBanner > .inner > #searchForm .search_box > input { display: block; width: 100%; height: 100%; box-sizing: border-box; padding: 2px 20px; padding-right: 60px; border-radius: 8px; border: 1px solid #999; font-size: 16px;}
 #mainBanner > .inner > #searchForm .search_box > button { position: absolute; width: 60px; top: 0; right: 0; height: 100%; background: transparent; font-size: 20px;}
@@ -25,26 +25,31 @@
 /* #introduceBox */
 #introduceBox { height: auto; color: #333; margin-bottom: 100px; }
 #introduceBox > .inner { width: 1180px;  margin: 0 auto; }
-#introduceBox > .inner > .join_box > article { width:50%; float: left; height: 400px; text-align: center; padding: 100px; box-sizing: border-box; background-color: #333; color: #fff; position: relative; z-index: 1; }
-#introduceBox > .inner > .join_box > article::after { content: ''; display: block; position: absolute; width: 100%; height: 100%;  top: 0px; left: 0px; z-index: -1; background: url('../img/space1.png') no-repeat center;  opacity: 0.2; }
-#introduceBox > .inner > .join_box > article:first-of-type{ margin-top: -150px; background-color: royalblue; }
+#introduceBox > .inner > .join_box > article { display: table; width:50%; float: left; height: 400px; text-align: center; padding: 100px; box-sizing: border-box; background-color: #333; color: #fff; position: relative; z-index: 1; overflow: hidden; }
+#introduceBox > .inner > .join_box > article::after { content: ''; display: block; position: absolute; width: 100%; height: 100%;  top: 0px; left: 0px; z-index: -1; background: url('../img/space1.png') no-repeat center;  opacity: 0.2; transition: all 1s; background-size: 300%; }
+#introduceBox > .inner > .join_box > article:hover::after { background-size: 350%; }
+#introduceBox > .inner > .join_box > article:first-of-type{ margin-top: -60px; background-color: royalblue; }
 #introduceBox > .inner > .join_box > article:first-of-type::after{  background-image: url('../img/space2.png'); }
-#introduceBox > .inner > .reason_box { margin-top: 100px; }
+#introduceBox > .inner > .join_box > article > .table-cell { display: table-cell; vertical-align: middle; }
+#introduceBox > .inner > .join_box > article > .table-cell > h2 { margin-bottom: 20px; font-size: 32px; text-transform: uppercase; }
+#introduceBox > .inner > .reason_box { margin-top: 120px; }
 #introduceBox > .inner > .reason_box > article { float: left; width: 380px; margin-right: 20px; padding: 10px; padding-left: 100px; box-sizing: border-box; height: 200px; position: relative; }
 #introduceBox > .inner > .reason_box > article > h2 { margin-bottom: 10px; }
 #introduceBox > .inner > .reason_box > article > p { margin-bottom: 10px; color: #666; }
-#introduceBox > .inner > .reason_box > article > a { border-bottom: 2px solid royalblue; padding-bottom: 2px; }
-#introduceBox > .inner > .reason_box > article:last-of-type { margin-right: 0px; }
+#introduceBox > .inner > .reason_box > article > a { border-bottom: 2px solid royalblue; padding: 0 4px; padding-bottom: 2px; background-color: #fff; transition: all 600ms;  }
+#introduceBox > .inner > .reason_box > article:last-of-type { margin-right: 0px; transition: all 500ms;  }
 #introduceBox > .inner > .reason_box > article > .icon { position: absolute; top: 10px; left: 10px; width: 60px; height: 60px; background-color: #eee; border-radius: 50%; text-align: center; line-height: 60px; font-size: 24px; color: #333; }
+#introduceBox > .inner > .reason_box > article> a:hover {background-color: royalblue; color: #fff;}
 
 /* #howtoBuy */
-#howtoBuy{padding-top: 100px; padding-bottom: 80px; background: #eee; color: #333;}
+#howtoBuy{padding-top: 100px; padding-bottom: 80px; background: url('../img/milyway.png') no-repeat; background-position: center; background-size: cover; background-attachment: fixed; color: #fff; position: relative; z-index: 1; }
+#howtoBuy::after{position: absolute; display: block; width: 100%; height: 100%; content: ''; background-color: #000; top:0; left: 0; opacity: 0.5; z-index: -1;}
 #howtoBuy .inner { width: 1180px; margin: 0 auto; text-align: center;}
 #howtoBuy h1{margin-bottom: 8px;  font-size: 28px;}
 #howtoBuy h1 > .point_text{position: relative; color: royalblue}
-#howtoBuy h1+p{ color: #666; margin-bottom: 60px;}
+#howtoBuy h1+p{ color: rgba(255,255,255,0.6); margin-bottom: 60px;}
 #howtoBuy .step_box > li {float: left; width: 20%; padding: 20px; box-sizing: border-box; position: relative; transition: all 1s;}
-#howtoBuy .step_box > li::after{content: ''; display: block; width: 40%; height: 1px; background: #000; position: absolute; top: 50px; right: -20%; opacity: 0.2}
+#howtoBuy .step_box > li::after{content: ''; display: block; width: 40%; height: 1px; background: #fff; position: absolute; top: 50px; right: -20%; opacity: 0.2}
 #howtoBuy .step_box > li:hover {color: royalblue; }
 #howtoBuy .step_box > li:last-child::after{display: none;}
 #howtoBuy .step_box > li .pic{width: 60px; height: 60px; margin: 0 auto; margin-bottom: 10px; font-size: 40px; line-height: 60px; text-align: center;}
@@ -52,7 +57,7 @@
 #howtoBuy .step_box > li dt+dd{font-size: 14px;}
 
 /* #consumerMenu */
-#consumerMenu{margin-top: 100px;}
+#consumerMenu{margin-top: 120px;}
 #consumerMenu .inner{width: 1180px; margin: 0 auto;}
 #consumerMenu .inner > div{float: left; width: 50%;}
 #consumerMenu h1{margin-bottom: 40px;  font-size: 28px; }
@@ -60,10 +65,12 @@
 #consumerMenu .inner .consumer_menu > li { float: left; width: 280px; margin-right: 10px; margin-bottom: 10px; }
 #consumerMenu .inner .consumer_menu > li:nth-child(2n){margin-right: 0px; }
 #consumerMenu .inner .consumer_menu > li > a { display: block; width: 80%; height: 100%; border-bottom: 1px solid #eee; padding-bottom: 5px; padding-left: 10px; box-sizing: border-box; text-overflow: ellipsis; white-space: nowrap; word-wrap: normal; overflow: hidden;}
-#consumerMenu .inner > .pic{background:url('../img/milyway.png') no-repeat; background-size: cover; background-position: center bottom; height: 300px; border-radius: 8px;}
+#consumerMenu .inner > .pic{ position: relative; height: 300px; overflow: hidden; }
+#consumerMenu .inner > .pic::after{position: absolute; display: block; width: 100%; height: 100%; content: ''; background-color: royalblue; opacity: 0.3;}
+#consumerMenu .inner > .pic > video { position: absolute; top: 50%; left: 50%; min-width: 100%; transform: translate(-50%, -50%); }
 
 /* #newsBox */
-#newsBox { height: auto; margin-top: 100px; margin-bottom: 100px;}
+#newsBox { height: auto; margin-top: 120px; margin-bottom: 120px;}
 #newsBox > .inner { width: 1180px; margin: 0 auto;}
 #newsBox > .inner > [class^="news"] { height: 400px; }
 #newsBox > .inner > .news_info { width: 280px; margin-right: 20px; float: left; padding: 10px; box-sizing: border-box; position: relative; }
