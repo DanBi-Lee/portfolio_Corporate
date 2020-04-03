@@ -1,0 +1,5 @@
+@import './sub_layout.css';
+
+/* #visual */
+#visual { background-image: url('../img/sub_visual/contact.jpg');}
+#visual > h1 { filter: none; }

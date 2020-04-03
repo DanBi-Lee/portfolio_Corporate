@@ -1,11 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap');
 
 /* reset */
-body,
-h1, h2, h3, h4, h5, h6{margin: 0;}
-ul, ol, dl, dd, 
-fieldset, legend,
-p, form, fieldset{margin: 0; padding: 0;}
+*{padding: 0; margin: 0;}
 table, th, td { border-collapse: collapse; }
 ul, ol{list-style:none;}
 a{text-decoration: none; color: inherit;}
