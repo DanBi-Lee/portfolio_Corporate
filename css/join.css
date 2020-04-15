@@ -1,4 +1,5 @@
 @import "./reset.css";
+
 /* #joinBox */
 #joinBox{ min-height: 100%; padding: 120px 0px; background: url('../img/galaxy.jpg') center no-repeat; background-attachment: fixed; background-size: cover; box-sizing: border-box;}
 #joinBox > .inner { max-width: 600px; margin: 0 auto; border: 1px solid #ddd; padding: 80px 40px; box-sizing: border-box; border-radius: 4px; background-color: #fff;}
