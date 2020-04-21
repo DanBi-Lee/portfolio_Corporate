@@ -1,5 +1,64 @@
 @import './sub_layout.css';
 
 /* #visual */
-#visual { background-image: url('../img/sub_visual/contact.jpg');}
-#visual > h1 { filter: none; }
+#visual { position: relative; z-index: 0;}
+#visual::after { content: ''; display: block; position: absolute; background-image: url('../img/sub_visual/contact.jpg'); width: 100%; height: 100%; top: 0; left: 0; background-position: center; z-index: -1; filter: brightness(0.6);}
+
+/* #contactBox */
+#contactBox { padding: 100px 0; }
+#contactBox > .inner { width: 1180px; margin: 0 auto; }
+#contactBox > .inner > h1 { font-size: 60px; font-weight: normal; text-transform: uppercase; margin-bottom: 40px; }
+#contactBox > .inner > form { border: 4px solid royalblue; border-right: 0; border-left: 0; padding: 40px 0; font-size: 18px; }
+#contactBox > .inner > form > fieldset:first-of-type { border-bottom: 1px solid #ddd; padding-bottom: 30px; margin-bottom: 30px; }
+#contactBox > .inner > form > fieldset > h2 { font-size: 24px; font-weight: bold; margin-bottom: 20px; }
+#contactBox > .inner > form > fieldset > span { display: inline-block; }
+#contactBox > .inner > form > fieldset:first-of-type > span { margin-right: 60px; }
+#contactBox > .inner > form > fieldset > ul { margin-bottom: 20px; }
+#contactBox > .inner > form > fieldset > ul > li { width: 49%; margin-right: 2%; float: left; margin-bottom: 20px; }
+#contactBox > .inner > form > fieldset > ul > li:nth-child(2n){ margin-right: 0; }
+#contactBox > .inner > form > fieldset > ul > li:last-child { width: 100%; }
+#contactBox > .inner > form > fieldset > ul > li > label { display: block; font-weight: bold; font-size: 16px; margin-bottom: 10px; text-transform: capitalize; }
+#contactBox > .inner > form > fieldset > ul > li.required > label::before { content: '* '; color: red; }
+#contactBox > .inner > form > fieldset > ul > li > input { width: 100%; height: 50px; font-size: 16px; padding: 10px; box-sizing: border-box; }
+#contactBox > .inner > form > fieldset > ul > li > textarea { width: 100%; font-size: 16px; padding: 10px; box-sizing: border-box;}
+#contactBox > .inner > form > fieldset > button[type="submit"] { width: 300px; height: 60px; border: 2px solid royalblue; box-sizing: border-box; font-size: 18px; font-weight: bold; float: right; text-transform: uppercase; background-color: transparent; }
+
+/* #mapBox */
+#mapBox { margin-bottom: 120px; }
+#mapBox > .inner { width: 1180px; margin: 0 auto; }
+#mapBox > .inner > h1{ font-size: 60px; font-weight: normal; text-transform: uppercase; margin-bottom: 40px; }
+#map { height: 600px; background-color: #ddd; filter: grayscale(0.6); transition: filter 0.5s; }
+#map:hover { filter: grayscale(0); }
+#mapBox > .inner > .map_wrap { position: relative; }
+#mapBox > .inner > .map_wrap > .btn_wrap { margin-top: 20px; float: right; }
+button[id^="branch"]{ height: 40px; padding: 0 20px; background-color: #fff; color: royalblue; border: 2px solid royalblue; border-radius: 4px; margin-right: 10px; margin-bottom: 10px;}
+button[id^="branch"].on{ background-color: royalblue; color: #fff;}
+.open_modal { width: 100%;background-color: transparent; }
+#mapBox > .inner > .embed_box { position: fixed; width: 100%; height: 100%; top: 0px; left: 0px; background-color: rgba(0,0,0,0.8); padding: 100px; z-index: 2000; box-sizing: border-box; cursor: pointer; display: none;}
+#mapBox > .inner > .embed_box > .close { position: absolute; top: 0px; right: 0px; padding: 20px; background-color: transparent; color: #fff;}
+#mapBox > .inner > .embed_box > embed { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 80vw; max-width: 1200px; height: 80vh; }
+
+/* 타블렛 */
+@media screen and (max-width: 1179px){
+    /* #contactBox */
+    #contactBox > .inner { width: 100%; padding: 0 20px; box-sizing: border-box; }
+    /* #contactBox > .inner > form > fieldset > button[type="submit"] { width: 300px; height: 60px; border: 2px solid royalblue; box-sizing: border-box; font-size: 18px; font-weight: bold; float: right; text-transform: uppercase; background-color: transparent; } */
+
+    /* #mapBox */
+    #mapBox > .inner { width: 100%; padding: 0 20px; box-sizing: border-box; }
+    .open_modal { width: 100%;background-color: transparent; }
+    #mapBox > .inner > .embed_box { padding: 80px;}
+    #mapBox > .inner > .embed_box > embed { position: relative; width: 100%; height: 100%; }
+}
+
+@media screen and (max-width: 549px){
+    /* #contactBox */
+    #contactBox > .inner { width: 100%; padding: 0 20px; box-sizing: border-box; }
+    #contactBox > .inner > form > fieldset > ul > li { width: 100%; margin-right: 0;}
+    #contactBox > .inner > form > fieldset > button[type="submit"] { max-width: 300px; }
+
+    /* #mapBox */
+    #mapBox > .inner { width: 100%; padding: 0 20px; box-sizing: border-box; }
+    #mapBox > .inner > .embed_box { padding: 0; padding-top: 60px;}
+    #mapBox > .inner > .embed_box > embed { position: relative; width: 100%; height: 100%; }
+}

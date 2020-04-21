@@ -11,6 +11,7 @@
     <meta property="og:image" content="https://danbi-lee.github.io/portfolio_Corporate/img/galaxy.jpg">
     <script src="https://kit.fontawesome.com/674d94d429.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/contact.css">
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=c77abc83328c57d2b982be4c9fe99b8c"></script>
     <title>이단비 portfolio Corporate01</title>
 </head>
 <body>
@@ -34,6 +35,97 @@
     <figure id="visual">
         <h1>Contact Us</h1>
     </figure>
+    <section id="contactBox">
+        <div class="inner">
+            <h1>
+                <strong>Online</strong> contact
+            </h1>
+            <form action="https://formspree.io/xqkdvvrv" class="form_contact" method="post">
+                <fieldset>
+                    <legend>project1</legend>
+                    <h2>01. Lorem, ipsum dolor?</h2>
+                    <span>
+                        <input type="checkbox" name="project_type" value="website" id="project_type1">
+                        <label for="project_type1">website</label>
+                    </span>
+                    <span>
+                        <input type="checkbox" name="project_type" value="mobile web/app" id="project_type2">
+                        <label for="project_type2">mobile web/app</label>
+                    </span>
+                    <span>
+                        <input type="checkbox" name="project_type" value="promotion" id="project_type3">
+                        <label for="project_type3">promotion</label>
+                    </span>
+                    <span>
+                        <input type="checkbox" name="project_type" value="brand design" id="project_type4">
+                        <label for="project_type4">brand design</label>
+                    </span>
+                    <span>
+                        <input type="checkbox" name="project_type" value="maintenance" id="project_type5">
+                        <label for="project_type5">maintenance</label>
+                    </span>
+                    <span>
+                        <input type="checkbox" name="project_type" value="etc" id="project_type6">
+                        <label for="project_type6">etc</label>
+                    </span>
+                </fieldset>
+                <fieldset>
+                    <legend>project2</legend>
+                    <h2>02. Lorem ipsum dolor sit.</h2>
+                    <ul class="wrap">
+                        <li class="required">
+                            <label for="company">company</label>
+                            <input type="text" id="company" name="company" required>
+                        </li>
+                        <li class="required">
+                            <label for="name">name</label>
+                            <input type="text" id="name" name="name" required>
+                        </li>
+                        <li class="required">
+                            <label for="tel">tel</label>
+                            <input type="text" id="tel" name="tel" required>
+                        </li>
+                        <li class="required">
+                            <label for="_mail">email</label>
+                            <input type="text" id="_mail" name="_mail" required>
+                        </li>
+                        <li>
+                            <label for="project">project</label>
+                            <input type="text" id="project" name="project">
+                        </li>
+                        <li>
+                            <label for="file">file</label>
+                            <input type="file" id="file" name="file">
+                        </li>
+                        <li>
+                            <label for="contactDetails">contact details</label>
+                            <textarea name="contactDetails" id="contactDetails" cols="30" rows="10"></textarea>
+                        </li>
+                    </ul>
+                    <button type="submit">submit</button>
+                </fieldset>
+            </form>
+        </div>
+    </section>
+    <section id="mapBox">
+        <div class="inner">
+            <h1><strong>offline</strong> contact</h1>
+            <div class="map_wrap wrap">
+                <div id="map">
+                    <!-- 카카오 맵 -->
+                </div>
+                <div class="btn_wrap">
+                    <button id="branch1" class="on">중미산 천문대</button>
+                    <button id="branch2">서서울어린이천문대</button>
+                    <button id="branch3">연세대학교 천문대</button>
+                </div>
+            </div>
+            <div class="embed_box">
+                <embed src="https://map.kakao.com/?eX=473831&eY=1145290&eName=Observatory">
+                <button class="close">닫기</button>
+            </div>
+        </div>
+    </section>
     <footer id="footBox">
         <h1 class="hidden">footer</h1>
         <div class="inner">
@@ -92,5 +184,6 @@
             </div>
         </div>
     </footer>
+    <script src="js/contact.js"></script>
 </body>
 </html>
