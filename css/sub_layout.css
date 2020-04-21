@@ -14,8 +14,9 @@
 #headBox > .inner > .btn_gnb { display: none; }
 
 /* #visual */
-#visual { width: 100%; height: 300px; padding-top: 80px; display: table; background: no-repeat center; background-color: #333; color: #fff;}
-#visual  > h1 { text-align: center; display: table-cell; vertical-align: middle;}
+#visual { width: 100%; height: 300px; padding-top: 80px; display: table; color: #fff; position: relative; z-index: 0;}
+#visual::after { content: ''; display: block; position: absolute; width: 100%; height: 100%; top: 0; left: 0; background: no-repeat center; z-index: -1; filter: brightness(0.6); background-color: #999;}
+#visual  > h1 { text-align: center; display: table-cell; vertical-align: middle;text-transform: uppercase; }
 
 /* #footBox */
 #footBox{background-color: #0c0c0c; color: #ddd; padding-bottom: 40px;}
