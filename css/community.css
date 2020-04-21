@@ -1,6 +1,9 @@
 @charset "utf-8";
 @import "./sub_layout.css";
 
+/* #visual */
+#visual::after { background-image: url('../img/sub_visual/community.jpg'); }
+
 /* #communityBox */
 #communityBox {padding: 100px 0;}
 #communityBox > .inner { max-width:1180px; margin: 0 auto; }

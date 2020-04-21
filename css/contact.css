@@ -1,8 +1,7 @@
 @import './sub_layout.css';
 
 /* #visual */
-#visual { position: relative; z-index: 0;}
-#visual::after { content: ''; display: block; position: absolute; background-image: url('../img/sub_visual/contact.jpg'); width: 100%; height: 100%; top: 0; left: 0; background-position: center; z-index: -1; filter: brightness(0.6);}
+#visual::after { background-image: url('../img/sub_visual/contact.jpg'); }
 
 /* #contactBox */
 #contactBox { padding: 100px 0; }
@@ -33,7 +32,7 @@
 #mapBox > .inner > .map_wrap > .btn_wrap { margin-top: 20px; float: right; }
 button[id^="branch"]{ height: 40px; padding: 0 20px; background-color: #fff; color: royalblue; border: 2px solid royalblue; border-radius: 4px; margin-right: 10px; margin-bottom: 10px;}
 button[id^="branch"].on{ background-color: royalblue; color: #fff;}
-.open_modal { width: 100%;background-color: transparent; }
+.open_modal { width: 100%;background-color: transparent; color: royalblue; font-weight: 600; font-size: 16px; }
 #mapBox > .inner > .embed_box { position: fixed; width: 100%; height: 100%; top: 0px; left: 0px; background-color: rgba(0,0,0,0.8); padding: 100px; z-index: 2000; box-sizing: border-box; cursor: pointer; display: none;}
 #mapBox > .inner > .embed_box > .close { position: absolute; top: 0px; right: 0px; padding: 20px; background-color: transparent; color: #fff;}
 #mapBox > .inner > .embed_box > embed { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 80vw; max-width: 1200px; height: 80vh; }
