@@ -13,7 +13,7 @@ var markerOptions = [
         title : '중미산 천문대',
         map : [37.5817298,127.3192562],
         get link(){
-            return '//map.kakao.com/link/to/'+this.title+','+this.map
+            return 'https://map.kakao.com/link/to/'+this.title+','+this.map
         },
         get latlng(){
             return new kakao.maps.LatLng(this.map[0],this.map[1]);
@@ -24,7 +24,7 @@ var markerOptions = [
         title : '서서울어린이천문대',
         map : [37.6290901,126.8885293],
         get link(){
-            return '//map.kakao.com/link/to/'+this.title+','+this.map
+            return 'https://map.kakao.com/link/to/'+this.title+','+this.map
         },
         get latlng(){
             return new kakao.maps.LatLng(this.map[0],this.map[1]);
@@ -35,7 +35,7 @@ var markerOptions = [
         title : '연세대학교 천문대',
         map : [37.629342,126.7834657],
         get link(){
-            return '//map.kakao.com/link/to/'+this.title+','+this.map
+            return 'https://map.kakao.com/link/to/'+this.title+','+this.map
         },
         get latlng(){
             return new kakao.maps.LatLng(this.map[0],this.map[1]);
