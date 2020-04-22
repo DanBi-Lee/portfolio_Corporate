@@ -35,7 +35,7 @@ button[id^="branch"].on{ background-color: royalblue; color: #fff;}
 .open_modal { width: 100%;background-color: transparent; color: royalblue; font-weight: 600; font-size: 16px; }
 #mapBox > .inner > .embed_box { position: fixed; width: 100%; height: 100%; top: 0px; left: 0px; background-color: rgba(0,0,0,0.8); padding: 100px; z-index: 2000; box-sizing: border-box; cursor: pointer; display: none;}
 #mapBox > .inner > .embed_box > .close { position: absolute; top: 0px; right: 0px; padding: 20px; background-color: transparent; color: #fff;}
-#mapBox > .inner > .embed_box > embed { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 80vw; max-width: 1200px; height: 80vh; }
+#mapBox > .inner > .embed_box > .embed { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 80vw; max-width: 1200px; height: 80vh; }
 
 /* 타블렛 */
 @media screen and (max-width: 1179px){
@@ -47,7 +47,7 @@ button[id^="branch"].on{ background-color: royalblue; color: #fff;}
     #mapBox > .inner { width: 100%; padding: 0 20px; box-sizing: border-box; }
     .open_modal { width: 100%;background-color: transparent; }
     #mapBox > .inner > .embed_box { padding: 80px;}
-    #mapBox > .inner > .embed_box > embed { position: relative; width: 100%; height: 100%; }
+    #mapBox > .inner > .embed_box > .embed { position: relative; width: 100%; height: 100%; }
 }
 
 @media screen and (max-width: 549px){
@@ -59,5 +59,5 @@ button[id^="branch"].on{ background-color: royalblue; color: #fff;}
     /* #mapBox */
     #mapBox > .inner { width: 100%; padding: 0 20px; box-sizing: border-box; }
     #mapBox > .inner > .embed_box { padding: 0; padding-top: 60px;}
-    #mapBox > .inner > .embed_box > embed { position: relative; width: 100%; height: 100%; }
+    #mapBox > .inner > .embed_box > .embed { position: relative; width: 100%; height: 100%; }
 }
