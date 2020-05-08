@@ -10,7 +10,10 @@
     <meta property="og:url" content="https://danbi-lee.github.io/portfolio_Corporate/">
     <meta property="og:image" content="https://danbi-lee.github.io/portfolio_Corporate/img/galaxy.jpg">
     <script src="https://kit.fontawesome.com/674d94d429.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/sub_layout.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/flickr.js"></script>
     <title>이단비 portfolio Corporate01</title>
 </head>
 <body>
@@ -34,6 +37,31 @@
     <figure id="visual">
         <h1>Gallery</h1>
     </figure>
+    <section id="search">
+        <div class="inner">
+            <form id="Formsearch" action="./gallery.html" method="GET">
+                <fieldset>
+                    <legend>검색</legend>
+                    <input type="text" id="imgaeSearchBox" name="imgaeSearchBox" value="" placeholder="Search all resources">
+                    <button type="submit">
+                        <i class="fas fa-search"></i>
+                        <span class="hidden">search</span>
+                    </button>
+                </fieldset>
+            </form>
+        </div>
+    </section>
+    <section id="gallery">
+        <div class="inner">
+            <ul class="list_image wrap">
+
+            </ul>
+        </div>
+    </section>
+    <!-- <aside class="popup_image">
+        <img src="https://farm66.staticflickr.com/65535/49865304968_ac707f986c_b.jpg" alt="">
+        <span class="close">X<span class="hidden">close</span></span>
+    </aside> -->
     <footer id="footBox">
         <h1 class="hidden">footer</h1>
         <div class="inner">
