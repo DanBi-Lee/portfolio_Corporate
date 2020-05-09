@@ -57,6 +57,7 @@ $(document).ready(function(){
             }
         })
         .success(function(data){
+            console.log(data);
             $('#gallery .list_image').empty();
             var item = data.photos.photo;
             $(item).each(function(){
@@ -96,7 +97,7 @@ $(document).ready(function(){
             }, 1000);
         })
         .error(function(){
-            alert('Fail to Load Flickr Images!!');
+            alert('이미지 로드에 실패했습니다.');
         });
     }
 
