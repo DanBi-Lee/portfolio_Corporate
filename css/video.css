@@ -1,0 +1,37 @@
+@import './sub_layout.css';
+/* #visual */
+#visual { overflow: hidden; }
+#visual::after { background-color: transparent;}
+#visual > video { position: absolute; top: 50%; left: 50%; width: 100%; transform: translate(-50%, -50%); z-index: -1; filter: brightness(0.6); }
+#visual > h1 { text-shadow: 0 0 10px rgba(0,0,0,0.6); }
+
+/* #video */
+#video { padding: 120px 0px; }
+#video > .inner { width: 1180px; margin: 0 auto; }
+#video > .inner > .list > li { width: 33.333%; font-size: 0; cursor: pointer; float: left; padding: 10px; box-sizing: border-box; }
+#video > .inner > .list > li > a { display: block; width: 100%; height: 100%; position: relative; }
+#video > .inner > .list > li img { width: 100%; height: auto; border-radius: 8px; overflow: hidden; }
+#video > .inner > .list > li .contents{ position: absolute; top: 0; left:0; width: 100%; height: 100%; font-size: 16px; color: #fff; background-color: rgba(0,0,0,0.3); opacity: 0;}
+#video > .inner > .list > li .contents .title { position: absolute; bottom: 0; width: 100%; height: 60px; background: linear-gradient(0deg, rgba(0,0,0,0.8), transparent);  line-height: 60px; padding: 0 20px; box-sizing: border-box; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; font-weight: 200; font-size: 16px; }
+#video > .inner > .list > li > a:hover .contents,
+#video > .inner > .list > li > a:focus .contents{ opacity: 1; }
+
+/* svg */
+#video > .inner > .list > li .svg { width: 80px; height: 80px; position: absolute; top: 50%; left: 50%; margin-top: -40px; margin-left: -40px; }
+#video > .inner > .list > li .svg > svg {position: absolute; top: 0px; left: 0px;}
+#video > .inner > .list > li .svg > svg >path{width: 100%; stroke: #fff; stroke-width: 5; fill: transparent; stroke-dasharray: 1840; stroke-dashoffset:1840; transition: stroke-dashoffset 0.6s 0s, fill 0.5s 0.6s; }
+#video > .inner > .list > li > a:hover .svg > svg >path,
+#video > .inner > .list > li > a:focus .svg > svg >path { stroke-dashoffset: 0; fill: rgba(255,255,255,0.7); }
+
+/* 타블렛 */
+@media screen and (max-width:1179px){
+    /* #video */
+    #video > .inner { width: 100%; padding: 0 20px; box-sizing: border-box; }
+    #video > .inner > .list > li { width: 50%; }
+}
+
+/* 모바일 */
+@media screen and (max-width:699px){
+    /* #video */
+    #video > .inner > .list > li { width: 100%; }
+}
