@@ -22,6 +22,33 @@
 #mainBanner > .inner > #searchForm .search_box > input { display: block; width: 100%; height: 100%; box-sizing: border-box; padding: 2px 20px; padding-right: 60px; border-radius: 8px; border: 1px solid #999; font-size: 16px;}
 #mainBanner > .inner > #searchForm .search_box > button { position: absolute; width: 60px; top: 0; right: 0; height: 100%; background: transparent; font-size: 20px;}
 
+/* #tabMenuBox */
+#tabMenuBox { background-image: url('../img/galaxy.jpg'); background-size: cover; background-position: center top; overflow: hidden; }
+#tabMenuBox > .inner { position: relative; width: 1180px; height: 600px; margin: 0 auto; padding: 0 20px; box-sizing: border-box; }
+#tabMenuBox > .inner > .box_planet { width: 50%; height: 100%; float: left; position: relative; }
+#tabMenuBox > .inner > .box_planet > .wrap_pic { width: 200%; height: 200%; position: absolute; top: 50%; left: 50%; transform: translate(-94%, -50%) rotate(135deg); transition: 600ms; }
+#tabMenuBox > .inner > .box_planet > .wrap_pic > .pic_planet { width: 50%; height: 50%; float: left; background-color: #fff; border-radius: 50%; background: no-repeat center; background-size: 120%; transform: rotate(-135deg) scale(0.8); color: #fff; filter: blur(5px) grayscale(0.2); transition: 1s }
+#tabMenuBox > .inner > .box_planet > .wrap_pic > .pic_planet:nth-child(1) { background-image: url('../img/planet/planet_earth.png'); }
+#tabMenuBox > .inner > .box_planet > .wrap_pic > .pic_planet:nth-child(2) { background-image: url('../img/planet/planet_jupiter.png'); }
+#tabMenuBox > .inner > .box_planet > .wrap_pic > .pic_planet:nth-child(3) { background-image: url('../img/planet/planet_mercury.png'); float: right; }
+#tabMenuBox > .inner > .box_planet > .wrap_pic > .pic_planet:nth-child(4) { background-image: url('../img/planet/planet_venus.png'); }
+#tabMenuBox > .inner > .box_planet > .wrap_pic > .pic_planet.on { filter: blur(0); transform: rotate(-135deg) scale(1) }
+
+#tabMenuBox > .inner > .box_contents { position: relative; width: 50%; height: 100%; float: left; }
+#tabMenuBox > .inner > .box_contents article { position: absolute; top: 0; left: 0; display: table; width: 100%; height: 100%; padding-bottom: 60px; box-sizing: border-box; color: #fff; opacity:0; transition: 600ms; }
+#tabMenuBox > .inner > .box_contents article.on { opacity: 1; }
+#tabMenuBox > .inner > .box_contents article > div { display: table-cell; vertical-align: middle; }
+#tabMenuBox > .inner > .box_contents article h2 { margin-bottom: 20px; font-size: 36px; }
+#tabMenuBox > .inner > .box_contents article p {  line-height: 1.8; }
+
+#tabMenuBox > .inner > .box_btns { position: absolute; bottom: 80px; right: 0px; width: 100px; height: 100px; transform: rotate(45deg); }
+#tabMenuBox > .inner > .box_btns > li { display: block; width: 50%; height: 50%; float: left; padding: 5px; box-sizing: border-box; }
+#tabMenuBox > .inner > .box_btns > li.on > button { background-color: #fff; color: #222; }
+#tabMenuBox > .inner > .box_btns > li:hover > button,
+#tabMenuBox > .inner > .box_btns > li > button:focus { box-shadow: 0px 0px 10px; color: aqua; border-color: aqua; transform: translate(2px, 2px); }
+#tabMenuBox > .inner > .box_btns > li > button { width: 100%; height: 100%; background-color: transparent; border: 2px solid #fff;  border-radius: 4px; box-shadow: 0px 0px 4px #fff; color: #fff;}
+#tabMenuBox > .inner > .box_btns > li > button > span { display: block; transform: rotate(-45deg); font-size: 18px; }
+
 /* #introduceBox */
 #introduceBox { height: auto; color: #333; margin-bottom: 100px; }
 #introduceBox > .inner { width: 1180px;  margin: 0 auto; }
@@ -57,7 +84,7 @@
 #howtoBuy .step_box > li dt+dd{font-size: 14px;}
 
 /* #consumerMenu */
-#consumerMenu{margin-top: 120px;}
+#consumerMenu{margin: 120px 0px;}
 #consumerMenu .inner{width: 1180px; margin: 0 auto;}
 #consumerMenu .inner > div{float: left; width: 50%;}
 #consumerMenu h1{margin-bottom: 40px;  font-size: 28px; }
