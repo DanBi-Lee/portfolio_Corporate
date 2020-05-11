@@ -11,6 +11,8 @@
     <meta property="og:image" content="https://danbi-lee.github.io/portfolio_Corporate/img/galaxy.jpg">
     <script src="https://kit.fontawesome.com/674d94d429.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/about-us.css">
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/headBox.js"></script>
     <title>이단비 portfolio Corporate01</title>
 </head>
 <body>
@@ -18,12 +20,24 @@
         <div class="inner wrap">
             <h1><a href="./">Observatory</a></h1>
             <ul class="gnb wrap">
-                <li><a href="./about-us.html">About Us</a></li>
-                <li><a href="./organization.html">Organization</a></li>
+                <li>
+                    <a href="./about-us.html">About Us</a>
+                    <ul class="depth2">
+                        <li><a href="./about-us.html#introduceBox">Introduction</a></li>
+                        <li><a href="./about-us.html#historyBox">History</a></li>
+                        <li><a href="./about-us.html#organizationBox">Organization</a></li>
+                    </ul>
+                </li>
                 <li><a href="./gallery.html">Gallery</a></li>
                 <li><a href="./video.html">Video</a></li>
                 <li><a href="./community.html">Community</a></li>
-                <li><a href="./contact.html">Contact Us</a></li>
+                <li>
+                    <a href="./contact.html">Contact Us</a>
+                    <ul class="depth2">
+                        <li><a href="./contact.html#contactBox">Online Contact</a></li>
+                        <li><a href="./contact.html#mapBox">Offline Contact</a></li>
+                    </ul>
+                </li>
             </ul>
             <ul class="unb wrap">
                 <li><a href="./login.html"><i class="fas fa-power-off"></i> <span>log</span><span>in</span></a></li>
@@ -119,6 +133,73 @@
                             </h3>
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium, omnis voluptatem sapiente voluptatum nobis excepturi beatae eius modi perspiciatis mollitia?</p>
                         </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section id="organizationBox">
+        <div class="inner">
+            <h1>조직도</h1>
+            <ul class="organizationBox_chart">
+                <li>
+                    <strong>원장</strong>
+                    <ul>
+                        <li>
+                            <strong>감사부</strong>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <strong>천문전산융합센터</strong>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <strong>부원장</strong>
+                            <ul class="class_center">
+                                <li>
+                                    <span>고천문연구센터</span>
+                                </li>
+                                        <li><span>광한천문본부</span></li>
+                                        <li><span>전파천문본부</span></li>
+                                        <li><span>우주과학본부</span></li>
+                                        <li><span>대형망원경사업단</span></li>
+                                        <li><span>우주위험감시센터</span></li>
+                                        <li><span>이론천문센터</span></li>
+                                        <li><span>천문우주기술센터</span></li>
+                            </ul>
+                            <ul class="class_rnd">
+                                <li><span>연구지원1팀</span></li>
+                                <li><span>연구지원2팀</span></li>
+                                <li><span>연구지원3팀</span></li>
+                            </ul>
+                        </li>
+                        <li>
+                                    <strong>정책부</strong>
+                                    <ul class="class_policy">
+                                        <li><span>적책현신팀</span></li>
+                                        <li><span>국제협력팀</span></li>
+                                        <li><span>대국민홍보팀</span></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <strong>기획부</strong>
+                                    <ul class="class">
+                                        <li><span>기획팀</span></li>
+                                        <li><span>예산팀</span></li>
+                                        <li><span>성과관리팀</span></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <strong>행정부</strong>
+                                    <ul class="class">
+                                        <li><span>총무시설안저팀</span></li>
+                                        <li><span>인사팀</span></li>
+                                        <li><span>회계팀</span></li>
+                                        <li><span>구매자산팀</span></li>
+                                    </ul>
+                                </li>
                     </ul>
                 </li>
             </ul>
