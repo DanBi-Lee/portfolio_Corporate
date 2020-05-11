@@ -2,7 +2,7 @@ $(document).ready(function(){
 
     var URL = 'https://www.googleapis.com/youtube/v3/playlistItems';
     var key = 'AIzaSyCgyAlSbGZk2B639WPSBJN4KTa6YOM4EhU';
-    var playlistId = 'PLomb3VSQH7wjgtTfy1cDproNuqpMI4d3h';
+    var playlistId = 'PLkHGKpEnuEu9XVIinaydA6cVecKV5J7Ci';
 
     var options = {
         part: 'snippet',
@@ -30,7 +30,6 @@ $(document).ready(function(){
             data : options      
         })
         .success(function(data){
-            console.log(data);
             create_list(data);
         })
         .error(function(){
@@ -41,9 +40,9 @@ $(document).ready(function(){
     function create_list(data){
         $(data.items).each(function(index, item){
             var title = item.snippet.title;
-            var vid_id = item.snippet.resourceId.videoId;
             var thumb = item.snippet.thumbnails.standard.url;
-            var svg = '<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="play-circle" class="svg-inline--fa fa-play-circle fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm115.7 272l-176 101c-15.8 8.8-35.7-2.5-35.7-21V152c0-18.4 19.8-29.8 35.7-21l176 107c16.4 9.2 16.4 32.9 0 42z"></path></svg>';
+            var vid_id = item.snippet.resourceId.videoId;
+            var svg = '<svg viewBox="0 0 512 512"><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm115.7 272l-176 101c-15.8 8.8-35.7-2.5-35.7-21V152c0-18.4 19.8-29.8 35.7-21l176 107c16.4 9.2 16.4 32.9 0 42z"></path></svg>';
     
             $('#video .list')
                 .append(
@@ -60,8 +59,8 @@ $(document).ready(function(){
                                         )
                                 )
                         )
-                )
-        })
+                );
+        });
     }
 
     function create_pop(vid_id){
