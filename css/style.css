@@ -2,7 +2,7 @@
 @import "./reset.css";
 
 /* #headBox */
-#headBox { position: absolute; top: 0; left: 0; width: 100%; height: 80px; z-index: 100; color: #fff; }
+#headBox { position: absolute; top: 0; left: 0; width: 100%; height: 80px; z-index: 100; color: #fff; background: linear-gradient(180deg, rgba(0,0,0,0.6), transparent);  }
 #headBox > .inner { width: 1180px; margin: 0 auto; line-height: 80px;}
 #headBox > .inner > h1 { float: left; margin-right: 40px; font-size: 24px; }
 #headBox > .inner > .gnb { float: left; font-size: 16px;}
