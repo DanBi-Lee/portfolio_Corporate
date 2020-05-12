@@ -10,14 +10,37 @@
 #introduceBox > .inner > .contents_box > div { display: table-cell; vertical-align: middle; font-size: 20px; padding: 40px; box-sizing: border-box; }
 #introduceBox > .inner > .contents_box > div > h2 { margin-bottom: 40px; text-transform: uppercase; font-size: 36px; }
 #introduceBox > .inner > .contents_box > div > p { line-height: 1.6; margin-bottom: 20px; }
-#introduceBox > .inner > .pic { width: 380px; height: 100%; float: left; background-color: #999; }
+#introduceBox > .inner > .pic { width: 380px; height: 100%; float: left; background: url('../img/introduction.jpg') no-repeat center; background-position: cover; }
 
 /* #historyBox */
+#historyBox  { padding: 120px 0px; color: #fff; background: url('../img/galaxy.jpg') no-repeat center top;  }
 #historyBox > .inner { width: 1180px; margin: 0 auto; }
-#historyBox > .inner > h1 { text-align: center; text-transform: uppercase; font-size: 36px; margin-bottom: 40px; }
-#historyBox > .inner > ul { position: relative; z-index: 1;}
-#historyBox > .inner > ul::before { content: ''; display: block; width: 2px; height: 100%; background-color: royalblue; position: absolute; top: 0px; left: 50%; margin-left: -1px; z-index: -1;}
-#historyBox > .inner > ul > li > h2 { width: 100px; height: 100px; line-height: 100px; text-align: center; border-radius: 50px; background-color: royalblue; margin: 0 auto; color: #fff; }
+#historyBox > .inner > h1 { text-align: center; text-transform: uppercase; font-size: 60px; margin-bottom: 100px;}
+#historyBox > .inner > h1 > span { border-bottom: 2px solid royalblue; padding-bottom: 20px; }
+#historyBox > .inner > .timeline { position: relative; z-index: 1;}
+#historyBox > .inner > .timeline::before { content: ''; display: block; width: 4px; background-color: #fff; position: absolute; top: 50px; bottom: 0; left: 50%; margin-left: -2px; z-index: -1;}
+#historyBox > .inner > .timeline > li { width: 50%; padding: 0px 20px; box-sizing: border-box; position: relative;  }
+#historyBox > .inner > .timeline > li::after { content: ''; display: block; position: absolute; width: 20px; height: 20px; background-color: #222; top: 50px; right: -10px;  border-radius: 10px; border: 4px solid #fff; box-sizing: border-box; }
+#historyBox > .inner > .timeline > li:nth-child(even)::after { right: unset; left: -10px; }
+#historyBox > .inner > .timeline > li:nth-child(odd) { text-align: right; }
+#historyBox > .inner > .timeline > li:nth-child(even){ margin-left: auto; }
+#historyBox > .inner > .timeline > li > .contents { padding: 20px; box-sizing: border-box;  margin-top: -10%; position: relative; background-color: rgba(0,0,0,0.6); border-radius: 10px;  }
+#historyBox > .inner > .timeline > li:first-child > .contents { margin-top: 0px;}
+#historyBox > .inner > .timeline > li > .contents .pic { width: 120px; height: 100px; position: absolute; top: -30px; left: 40px; background-repeat: no-repeat; background-size: center; background-size: contain; display: none; }
+#historyBox > .inner > .timeline > li:nth-child(even) > .contents .pic { left: unset; right: 40px; }
+#historyBox > .inner > .timeline > li:nth-child(1) > .contents .pic { background-image: url('../img/history/time_1958.jpg'); }
+#historyBox > .inner > .timeline > li:nth-child(2) > .contents .pic { background-image: url('../img/history/time_1990.jpg'); }
+#historyBox > .inner > .timeline > li:nth-child(3) > .contents .pic { background-image: url('../img/history/time_1992.jpg'); }
+#historyBox > .inner > .timeline > li:nth-child(4) > .contents .pic { background-image: url('../img/history/time_1993.jpg'); }
+#historyBox > .inner > .timeline > li:nth-child(5) > .contents .pic { background-image: url('../img/history/time_1995.jpg'); }
+#historyBox > .inner > .timeline > li:nth-child(6) > .contents .pic { background-image: url('../img/history/time_1999.jpg'); }
+#historyBox > .inner > .timeline > li:nth-child(7) > .contents .pic { background-image: url('../img/history/time_2000.jpg'); }
+#historyBox > .inner > .timeline > li:nth-child(8) > .contents .pic { background-image: url('../img/history/time_2003.jpg'); }
+#historyBox > .inner > .timeline > li:nth-child(9) > .contents .pic { background-image: url('../img/history/time_2018.jpg'); }
+#historyBox > .inner > .timeline > li > .contents .year { font-size: 50px; margin-bottom: 20px; }
+#historyBox > .inner > .timeline > li > .contents dt { font-size: 24px; font-weight: 600; margin-bottom: 10px; }
+#historyBox > .inner > .timeline > li > .contents dd { font-size: 16px; }
+
 
 /* #organiztionBox */
 #organizationBox { padding: 100px 0px; }
@@ -54,7 +77,36 @@ ul[class^=class] > li::after { display: block; content: ''; width: 20px; height:
 
 /* 타블렛 */
 @media screen and (max-width: 1179px){
+    /* #introduceBox */
+    #introduceBox > .inner { width: 100%; padding: 0px 20px; box-sizing: border-box;}
+    #introduceBox > .inner > .contents_box { width: 60%; margin-right: 0px; }
+    #introduceBox > .inner > .pic { width: 40%;  }
+
+    /* #historyBox */
+    #historyBox > .inner { width: 100%; padding: 0px 20px; box-sizing: border-box; }
+
+    /* #organizationBox */
     #organizationBox > .inner { width: 100%; max-width: 600px; padding: 0 20px; box-sizing: border-box; }
     #organizationBox > .inner > .organizationBox_chart { height: auto; background: none; }
     #organizationBox > .inner > .organizationBox_chart > li { display: block; }
+}
+
+/* 모바일 */
+@media screen and (max-width: 979px){
+    /* #introduceBox */
+    #introduceBox { padding: 60px 0px 80px; }
+    #introduceBox > .inner { width: 100%; height: auto; padding: 0px 20px; box-sizing: border-box;}
+    #introduceBox > .inner > .contents_box { width: 100%; margin-right: 0px; }
+    #introduceBox > .inner > .pic { width: 100%;  height: 300px; }
+
+    /* #historyBox */
+    #historyBox  { padding: 80px 0px;  }
+    #historyBox > .inner > h1 { margin-bottom: 40px; }
+    #historyBox > .inner > h1 > span { border-bottom: 2px solid royalblue; padding-bottom: 20px; }
+    #historyBox > .inner > .timeline::before { background-color: rgba(255,255,255,0.6); top: 0px; z-index: -1;}
+    #historyBox > .inner > .timeline > li { width: 100%;  text-align: center; margin-top: 80px; }
+    #historyBox > .inner > .timeline > li::after { background-color: #222; top: 0px; left: 50%; transform: translate(-50%, -50%); border-color: rgba(255,255,255,0.6); }
+    #historyBox > .inner > .timeline > li:nth-child(even)::after {top: 0px; left: 50%; }
+    #historyBox > .inner > .timeline > li:nth-child(odd) { text-align: center; }
+    #historyBox > .inner > .timeline > li > .contents { margin-top: 0px; background-color: rgba(0,0,0,0.7); }
 }
