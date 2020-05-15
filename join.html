@@ -23,38 +23,39 @@
             <form action="#" method="post" id="formJoin">
                 <fieldset>
                     <legend>join</legend>
-                    <div>
+                    <div class="item inputs">
                         <label for="email">이메일</label>
                         <input type="text" id="email" name="email" placeholder="이메일을 입력해주세요" required>
-                        <p class="error"><i class="fas fa-exclamation-circle"></i> 에러메세지</p>
+                        <p class="error_message"><i class="fas fa-exclamation-circle"></i> 이메일을 입력하세요.</p>
                     </div>
-                    <div>
+                    <div class="item inputs">
                         <label for="password">비밀번호</label>
                         <input type="password" id="password" name="password" placeholder="비밀번호를 입력해주세요" required>
-                        <p class="error"><i class="fas fa-exclamation-circle"></i> 에러메세지</p>
+                        <p class="error_message"><i class="fas fa-exclamation-circle"></i> 비밀번호를 입력하세요.</p>
                     </div>
-                    <div>
+                    <div class="item inputs">
                         <label for="re-password">비밀번호 확인</label>
-                        <input type="password" id="re-password" name="re-password" placeholder="비밀번호를 다시 입력해주세요" required>
-                        <p class="error"><i class="fas fa-exclamation-circle"></i> 에러메세지</p>
+                        <input type="password" id="re-password" name="re-password" placeholder="비밀번호를 다시 입력해주세요">
+                        <p class="error_message"><i class="fas fa-exclamation-circle"></i> 비밀번호가 일치하지 않습니다.</p>
                     </div>
                     <div class="terms_box">
-                        <p class="allcheck">
+                        <div class="allcheck item">
                             <input type="checkbox" id="check-all">
                             <label for="check-all">모두 동의합니다.</label>
-                        </p>
-                        <p>
+                            <p class="error_message"><i class="fas fa-exclamation-circle"></i> 필수항목을 체크하세요.</p>
+                        </div>
+                        <div class="item">
                             <input type="checkbox" name="terms" value="terms01" id="terms01" required>
                             <label for="terms01"><a href="#">회원정보 이용 약관</a>에 동의합니다. <span>(필수)</span></label>
-                        </p>
-                        <p>
+                        </div>
+                        <div class="item">
                             <input type="checkbox" name="terms" value="terms02" id="terms02" required>
                             <label for="terms02"><a href="#">이메일 수집 약관</a>에 동의합니다. <span>(필수)</span></label>
-                        </p>
-                        <p>
+                        </div>
+                        <div class="item">
                             <input type="checkbox" name="terms" value="terms-event" id="terms-event">
-                            <label for="terms-event"><a>이벤트 수신약관</a>에 동의합니다. <span>(선택)</span></label>
-                        </p>
+                            <label for="terms-event"><a href="#">이벤트 수신약관</a>에 동의합니다. <span>(선택)</span></label>
+                        </div>
                     </div>
                     <button class="btn_join" type="submit">회원가입</button>
                 </fieldset>

@@ -8,13 +8,23 @@
 #joinBox > .inner > form { max-width: 400px; margin: 0 auto; }
 #joinBox > .inner > form > fieldset > div { margin-bottom: 24px; }
 #joinBox > .inner > form > fieldset > div > label { display: block; color: rgb(87, 103, 150); }
-#joinBox > .inner > form > fieldset > div > input { width: 100%; padding: 8px 0px; font-size: 16px; display: block; border: none; border-bottom: 1px solid #dfdfdf; box-sizing: border-box; }
-#joinBox > .inner > form > fieldset > div > .error { text-align: right; font-size: 12px; margin-top: 4px; color: red; }
-#joinBox > .inner > form > fieldset > div > input:focus { outline:none; border-color: royalblue;}
-#joinBox > .inner > form > fieldset > .terms_box > p { margin-bottom: 8px; margin-left: 10px; font-size: 14px; }
+#joinBox > .inner > form > fieldset > div > input { width: 100%; padding: 8px 0px; font-size: 16px; display: block; border: none; border-bottom: 1px solid #dfdfdf; box-sizing: border-box; transition: 500ms; }
+#joinBox > .inner > form > fieldset > div > .error_message,
+#joinBox > .inner > form > fieldset > .terms_box .error_message { text-align: right; font-size: 12px; margin-top: 4px; color: red; display: none; }
+#joinBox > .inner > form > fieldset > .terms_box .error_message { position: absolute; right: 0px; bottom: 10px; }
+#joinBox > .inner > form > fieldset > div > input:focus { outline:none; border-bottom: 2px solid royalblue;}
+#joinBox > .inner > form > fieldset > .terms_box > .item { margin-bottom: 8px; margin-left: 10px; font-size: 14px; position: relative; }
 #joinBox > .inner > form > fieldset > .terms_box > .allcheck { font-size: 16px; padding-bottom: 10px; border-bottom: 1px solid #ddd; margin-bottom: 10px; margin-left: 0; }
-#joinBox > .inner > form > fieldset > .terms_box > p > label > a { text-decoration: underline; }
+#joinBox > .inner > form > fieldset > .terms_box > .item > label > a { text-decoration: underline; }
 #joinBox > .inner > form > fieldset > .btn_join{ width: 100%; height: 50px; color: #fff; background-color: royalblue; border-radius: 4px; font-size: 16px; margin-top: 40px; }
+
+/* 에러 class */
+
+#joinBox > .inner > form > fieldset > div.error > input,
+#joinBox > .inner > form > fieldset > .terms_box > .allcheck.error { border-bottom: 1px solid red; }
+#joinBox > .inner > form > fieldset > div.error > .error_message,
+#joinBox > .inner > form > fieldset > .terms_box > .allcheck.error .error_message { display: block; }
+
 
 /* 반응형 */
 @media screen and (max-width:699px){
