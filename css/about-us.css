@@ -10,7 +10,7 @@
 #introduceBox > .inner > .contents_box > div { display: table-cell; vertical-align: middle; font-size: 20px; padding: 40px; box-sizing: border-box; }
 #introduceBox > .inner > .contents_box > div > h2 { margin-bottom: 40px; text-transform: uppercase; font-size: 36px; }
 #introduceBox > .inner > .contents_box > div > p { line-height: 1.6; margin-bottom: 20px; }
-#introduceBox > .inner > .pic { width: 380px; height: 100%; float: left; background: url('../img/introduction.jpg') no-repeat center; background-position: cover; }
+#introduceBox > .inner > .pic { width: 380px; height: 100%; float: left; background: url('../img/introduction.jpg') no-repeat center; background-size: cover; }
 
 /* #historyBox */
 #historyBox  { padding: 120px 0px; color: #fff; background: url('../img/galaxy.jpg') no-repeat center top;  }
@@ -26,7 +26,7 @@
 #historyBox > .inner > .timeline > li:nth-child(even){ margin-left: auto; }
 #historyBox > .inner > .timeline > li > .contents { padding: 20px; box-sizing: border-box;  margin-top: -10%; position: relative; background-color: rgba(0,0,0,0.6); border-radius: 10px;  }
 #historyBox > .inner > .timeline > li:first-child > .contents { margin-top: 0px;}
-#historyBox > .inner > .timeline > li > .contents .pic { width: 120px; height: 100px; position: absolute; top: -30px; left: 40px; background-repeat: no-repeat; background-size: center; background-size: contain; display: none; }
+#historyBox > .inner > .timeline > li > .contents .pic { width: 120px; height: 100px; position: absolute; top: -30px; left: 40px; background-repeat: no-repeat; background-position: center;  background-size: contain; display: none; }
 #historyBox > .inner > .timeline > li:nth-child(even) > .contents .pic { left: unset; right: 40px; }
 #historyBox > .inner > .timeline > li:nth-child(1) > .contents .pic { background-image: url('../img/history/time_1958.jpg'); }
 #historyBox > .inner > .timeline > li:nth-child(2) > .contents .pic { background-image: url('../img/history/time_1990.jpg'); }

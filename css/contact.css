@@ -35,7 +35,7 @@ button[id^="branch"].on{ background-color: royalblue; color: #fff;}
 .open_modal { width: 100%;background-color: transparent; color: royalblue; font-weight: 600; font-size: 16px; }
 #mapBox > .inner > .embed_box { position: fixed; width: 100%; height: 100%; top: 0px; left: 0px; background-color: rgba(0,0,0,0.8); padding: 100px; z-index: 2000; box-sizing: border-box; cursor: pointer; display: none;}
 #mapBox > .inner > .embed_box > .close { position: absolute; top: 0px; right: 0px; padding: 20px; background-color: transparent; color: #fff;}
-#mapBox > .inner > .embed_box > .embed { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 80vw; max-width: 1200px; height: 80vh; }
+#mapBox > .inner > .embed_box > .embed { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 80vw; max-width: 1200px; height: 80vh; border: none; }
 
 /* 타블렛 */
 @media screen and (max-width: 1179px){
