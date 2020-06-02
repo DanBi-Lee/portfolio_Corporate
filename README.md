@@ -28,7 +28,7 @@
 - 코드 유효성 검사 통과 (https://jigsaw.w3.org/css-validator/)
 
 ## :pushpin: 워크 플로우
-- [이슈 기반 버전 관리 워크플로우](https://danbi-s-rain.gitbook.io/blog/git/project-git-workflow)에 따라 작업
+- [이슈 기반 버전 관리 워크플로우](https://danbi-s-rain.gitbook.io/blog/coding/git/project-git-workflow)에 따라 작업
 - 브랜치 구분 (작은 프로젝트와 맞게 git-flow 수정, ※[참고블로그](https://woowabros.github.io/experience/2017/10/30/baemin-mobile-git-branch-strategy.html))
 	- 호스팅 : gh-pages
 
