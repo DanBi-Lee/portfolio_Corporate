@@ -156,6 +156,11 @@
     /* #headBox */
     #headBox > .inner { width: 100%; padding: 0px 20px; box-sizing: border-box; }
 
+    /* #tabMenuBox */
+    #tabMenuBox > .inner { width: 100%; padding: 0 40px; }
+    #tabMenuBox > .inner > .box_planet { width: 50%; height: auto; padding-top: 50%; top: 50%; transform: translateY(-50%);}
+    #tabMenuBox > .inner > .box_btns { right: 40px; }
+
     /* #howtoBuy */
     #howtoBuy .inner { width: 100%; padding: 0 20px; box-sizing: border-box; }
     #howtoBuy .step_box > li {float: left; width: 33.333333%; margin-bottom: 40px;}
@@ -220,7 +225,21 @@
     #newsBox > .inner > ul.news > li:nth-child(3){ display: none; }
 }
 
+@media screen and (max-width: 759px){
+    /* #tabMenuBox */
+    #tabMenuBox > .inner { width: 100%; padding: 0 40px; }
+    #tabMenuBox > .inner > .box_planet { width: 100%; padding-top: 100%; top: 30%; transform: rotate(90deg) translateX(0%); margin-top: -40%; z-index: 10;}
+    #tabMenuBox > .inner > .box_contents { width: 100%; height: 50%; }
+    #tabMenuBox > .inner > .box_contents > article > div { background-color: rgba(0,0,0,0.6); padding: 40px; }
+    #tabMenuBox > .inner > .box_btns { bottom: unset; top: 40px; right: 40px; z-index: 40; }
+}
+
+
 @media screen and (max-width: 549px){
+    /* #tabMenuBox */
+    #tabMenuBox > .inner { height: 750px; }
+    #tabMenuBox > .inner > .box_planet { top: 0%; transform: rotate(90deg) translateX(30%);}
+
     /* #introduceBox */
     #introduceBox > .inner > .join_box > article { padding: 50px; }
 
