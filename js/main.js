@@ -30,4 +30,57 @@ $(document).ready(function(){
         });
     
     })();
+
+    /* #newsBox */
+    (function(){
+        var $newsBox = $('#newsBox');
+        var $btn_left = $newsBox.find('.btn_left');
+        var $btn_right = $newsBox.find('.btn_right');
+        var $news = $newsBox.find('ul.news');
+        var $news_li = $news.children('li');
+        $news_li.last().prependTo($news);
+        var li_width = $news_li.outerWidth();
+        $news.css({
+            marginLeft : - (li_width) + 'px'
+        })
+
+        $btn_left.on('click',function(){
+            moveLeft();
+        });
+        $btn_right.on('click', function(){
+            moveRight();
+        });
+
+        function moveLeft(){
+            var $news_li = $news.children('li');
+            var li_width = $news_li.outerWidth();
+            console.log(li_width);
+            $news.stop().animate({
+                marginLeft : -(2 * li_width) + 'px'
+            }, function(){
+                $news_li = $news.children('li');
+                $news_li.first().appendTo($news);
+                $(this).css({
+                    marginLeft : -li_width + 'px'
+                });
+            });
+        }
+
+        function moveRight(){
+            var $news_li = $news.children('li');
+            var li_width = $news_li.outerWidth();
+            console.log(li_width); 
+            $news.stop().animate({
+                marginLeft : '0px'
+            }, function(){
+                $news_li = $news.children('li');
+                $news_li.last().prependTo($news);
+                $(this).css({
+                    marginLeft : -li_width + 'px'
+                });
+            });
+        }
+
+    })();
+
 });
